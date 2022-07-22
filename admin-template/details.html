@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Admin Panel</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categories.html">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="users.html">Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="orders.html">Orders</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-user"></i>Welcome Guest
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="profile.html" class="dropdown-item">
+                            <i class="fa fa-user"></i>Profile
+                        </a>
+                        <a href="settings.html" class="dropdown-item">
+                            <i class="fa-solid fa-gear"></i>Settings
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>Log Out
+                    </a>
+                </li>
+            </ul>        
+          </div>
+        </div>
+      </nav>
+
+      <!-- Nav Konum -->
+      <div class="bg-secondary text-white p-2" style="max-width: 100%;">
+        <div class="container">
+            <h1 class="h5 mb-0">
+                <i class="fa-solid fa-caret-right"></i>Products Details
+            </h1>
+        </div>
+      </div>
+
+
+      <section id="actions" class="py-4 mb-4 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <button class="btn btn-secondary btn-outline-light btn-block" >
+                <i class="fa-solid fa-arrow-left p-1"></i>Cancel Update</button>
+            </div>
+            <div class="col-md-2">
+              <button class="btn btn-danger btn-outline-light btn-block" >
+                <i class="fa-solid fa-trash p-1"></i>Delete Product</button>
+            </div>
+        
+          </div>
+        </div>
+      </section>
+
+<!-- Alert -->
+<section id="results">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="alert alert-success alert-dismissible fade-show ">
+        <i class="fa fa-check m-2"></i>Bilgileriniz Kayıt Edildi.
+        <button class="btn close" data-bs-dismiss="alert">
+          <span class="">&times;</span>
+        </button>
+      </div>
+      <div class="alert alert-warning">
+        <i class="fa fa-question m-2"></i>Bilgileriniz Kontrol Edin.
+      </div>
+      <div class="alert alert-danger ">
+        <i class="fa fa-times m-2"></i>Bilinmeyen Bir Hata Oluştu
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+      <!-- Dashboard Container Product-->
+      <div class="container pt-4">
+        <div class="row">
+           <div class="col">
+            <div class="card">
+              <div class="card-header">Edit Product</div>
+
+              <div class="card-body">
+                <form action="">
+                  <div class="mb-3">
+                    <label for="name">Product Name</label> 
+                    <input type="text" name="name" id="name" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label for="price">Price</label> 
+                    <input type="text" name="price" id="price" class="form-control">
+                  </div>
+                  <div class="mb-3">
+                    <label for="category">Category Name</label> 
+                    <select name="category" id="category" class="form-select">
+                      <option value="">Phone</option>
+                      <option value="">Book</option>
+                      <option value="">Computer</option>        
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="image">Image</label> 
+                    <div class="form-file">
+                      <input type="file" class="form-file-input" name="" id="customFile">
+                      <label for="customFile" class="form-file-label">
+                        <span class="form-file-text">Choose File</span>
+                        <span class="form-file-text">Browse</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" name="" id="isApproved">
+                      <label class="form-check-label" for="isApproved">isApproved</label>
+                    </div>
+                  </div>
+  
+                  <div class="mb-3">
+                    <label for="description" >Description</label>
+                    <textarea name="" id="description" class="form-control"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <button class="btn btn-primary"><i class="fa fa-check"></i> Save Changes</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+           </div>
+        </div>
+        
+
+      </div>
+
+   
+
+   
+
+
+
+
+    <script src="/node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
+    <script>
+       CKEDITOR.replace( 'description' );
+    </script>
+
+</body>
+</html>

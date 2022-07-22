@@ -1,0 +1,194 @@
+body{
+    background-color: #F1EEDB;
+}
+
+
+/*nav{
+    background-color: #725368;
+}
+*/
+
+
+
+.navbar .nav-link{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.navbar .nav-link.active{
+    font-weight: bold;
+    border-bottom:#8D7688 2px solid ; 
+}
+
+.btn-circle{
+    border-radius: 20px;
+    padding: 12px 20px;
+}
+
+.carousel-item {
+    height:650px ;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color:#000 ,$alpha:0.7);
+}
+
+#home-heading{
+    position: relative;
+    min-height: 200px;
+    background-image: url('../img/sc.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 54px;
+    text-align: center;
+    color: #D9B4A3;
+}
+
+#home-text{
+    background-color: red;
+}
+
+#video{
+    position: relative;
+    min-height: 200px;
+    background-image: url('../img/sc2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 -300px;
+    text-align: center;
+    color: #725368
+}
+
+#video a{
+    color: #725368
+}
+
+#galeri h1{
+    color: #C19185;
+}
+
+#subscribe{
+    background-color: #C19185;
+}
+
+
+#subscribe input{
+    padding: 10px 18px;
+    border-radius: 20px;
+    outline: none;
+    border-color: #C19185;
+    background-color:#F1EEDB;
+    
+}
+
+#subscribe input:focus {
+    padding: 10px 18px;
+    border-radius: 20px;
+    outline: none;
+}
+
+#subscribe a{
+    background-color:#F1EEDB;
+}
+
+
+//about
+#about-heading{
+    position: relative;
+    min-height: 300px;
+    background-image: url('../img/sc2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 -300px;
+    text-align: center;
+    color: white;
+}
+
+#comments{
+    background-color:#8D7688;
+}
+
+#teachers .card{
+    background-color: #8D7688
+}
+
+
+//courses
+
+#courses-heading{
+    position: relative;
+    min-height: 300px;
+    background-image: url('../img/sc1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 -100px;
+    text-align: center;
+
+}
+
+
+.checked{
+    color:#725368
+}
+
+//bizim container biz meta bilgilerini thumb ın üstüne getirmek istiyoruz.
+.course-thumb{
+    position: relative;
+}
+
+.course-thumb ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+.course.meta{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba($color:#000,$alpha:0.6);
+    padding: 4px 20px;
+    border-radius: 0 4px 0 0;
+    color:white;
+    font-size:0.8rem
+}
+
+.list-group-item{
+    background-color:#8D7688;
+}
+
+.card{
+    background-color: #8D7688;;
+}
+
+.card button{
+    color: white;
+    text-decoration: none;
+}
+
+.card button:hover{
+    color: #725368
+   
+}
+
+.date ul{
+    margin: 0;
+    padding: 0;
+}
+//blogus
+.date{
+    color: #725368;
+    text-align: center;
+    padding: 5px;
+    background-color: #D9B4A3; 
+    border-radius: 5px;
+}

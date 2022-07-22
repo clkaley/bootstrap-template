@@ -1,0 +1,5 @@
+//ezmek istenilen bootstrap bootstraptan önce yazılır.
+
+@import 'bootstrap-override';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'style';  

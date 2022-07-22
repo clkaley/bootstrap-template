@@ -1,0 +1,59 @@
+body{
+    background-color:$dark;
+    color: $white;
+}
+
+input{
+    background-color: transparent;
+}
+input:hover{
+    border-color: $primary;
+}
+input::placeholder{
+    color: $primary;
+}
+
+.navbar{
+    border-bottom: $primary 3px solid;
+    opacity: 0.8;
+}
+
+.buton{
+    border-color:transparent;
+    background-color: $primary;
+}
+
+buton:hover{
+    background-color: $dark;
+}
+
+#home{
+    background-image: url("../img/dis2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+
+   .img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+    background: rgba($color:black,$alpha:0.6);
+   }
+}
+
+
+.home-inner{
+    padding-top: 150px;
+}
+
+.card-text{
+    color:$primary ;
+}
+
+#discover{
+    background-color:$primary ;
+}
+

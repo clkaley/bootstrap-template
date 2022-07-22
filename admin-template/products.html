@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Admin Panel</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categories.html">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="users.html">Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="orders.html">Orders</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-user"></i>Welcome Guest
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="profile.html" class="dropdown-item">
+                            <i class="fa fa-user"></i>Profile
+                        </a>
+                        <a href="settings.html" class="dropdown-item">
+                            <i class="fa-solid fa-gear"></i>Settings
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>Log Out
+                    </a>
+                </li>
+            </ul>        
+          </div>
+        </div>
+      </nav>
+
+      <!-- Nav Konum -->
+      <div class="bg-secondary text-white p-2" style="max-width: 100%;">
+        <div class="container">
+            <h1 class="h5">
+                <i class="fa-solid fa-caret-right"></i>Products
+            </h1>
+        </div>
+      </div>
+
+
+      <section id="actions" class="py-4 mb-4 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <button class="btn btn-primary btn-outline-light" data-bs-toggle="modal" data-bs-target="#newProductModal">
+                <i class="fa-solid fa-plus p-1"></i>Add Product</button>
+            </div>
+            <div class="col-md-4 ml-auto">
+                <div class="input-group ">
+                  <input type="text" class="form-control" placeholder="Search Product">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" >Search</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Dashboard Container Product-->
+      <div class="container pt-4">
+        <div class="row">
+           <div class="col">
+             <!-- Product Table -->
+             <table class="table mb-0">
+              <thead  class="table-secondary" >
+                <tr >
+                  <th scope="col">Product Id</th>
+                  <th scope="col">Image</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Approved</th>
+                  <th scope="col"></th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>
+                      <img
+                      class="img-fluid" width="50" src="./img/1.jpg" alt="">
+                  </td>
+                  <td>Samsung S6</td>
+                  <td>1000 TL</td>
+                  <td >
+                      <span><i class="fa-solid fa-check-double"></i></span></td>
+                  <td class="text-right ">
+                      <button class="btn btn-sm bg-primary "><i class="fa-solid fa-caret-right me-1"></i>Details</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>
+                      <img
+                      class="img-fluid" width="50" src="./img/2.jpg" alt="">
+                  </td>
+                  <td>Samsung S6</td>
+                  <td>3000 TL</td>
+                  <td >
+                      <span><i class="fa-solid fa-check-double"></i></span></td>
+                  <td class="text-right ">
+                      <button class="btn btn-sm bg-primary "><i class="fa-solid fa-caret-right me-1"></i>Details</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>
+                      <img
+                      class="img-fluid" width="50" src="./img/3.jpg" alt="">
+                  </td>
+                  <td>Samsung S5</td>
+                  <td>5000 TL</td>
+                  <td >
+                      <span><i class="fa-solid fa-check-double"></i></span></td>
+                  <td class="text-right ">
+                      <button class="btn btn-sm bg-primary "><i class="fa-solid fa-caret-right me-1"></i>Details</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>
+                      <img
+                      class="img-fluid" width="50" src="./img/4.jpg" alt="">
+                  </td>
+                  <td>Iphone 5S</td>
+                  <td>2500 TL</td>
+                  <td >
+                      <span><i class="fa-solid fa-check-double"></i></span></td>
+                  <td class="text-right ">
+                      <button class="btn btn-sm bg-primary "><i class="fa-solid fa-caret-right me-1"></i>Details</button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>
+                      <img
+                      class="img-fluid" width="50" src="./img/5.jpg" alt="">
+                  </td>
+                  <td>Iphone 12</td>
+                  <td>20000 TL</td>
+                  <td >
+                      <span><i class="fa-solid fa-check-double"></i></span></td>
+                  <td class="text-right ">
+                      <button class="btn btn-sm bg-primary "><i class="fa-solid fa-caret-right me-1"></i>Details</button>
+                  </td>
+                
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>
+                      <img
+                      class="img-fluid" width="50" src="./img/6.jpg" alt="">
+                  </td>
+                  <td>Iphone 11</td>
+                  <td>18000 TL</td>
+                  <td >
+                      <span><i class="fa-solid fa-check-double"></i></span></td>
+                  <td class="text-right ">
+                      <button class="btn btn-sm bg-primary "><i class="fa-solid fa-caret-right me-1"></i>Details</button>
+                  </td>
+                
+                </tr>
+              </tbody>
+          </table>
+           </div>
+        </div>
+        <div class="row">
+          <div class="col">
+               <!-- Pagination -->
+      <nav aria-label="Page navigation example" class="p-2  ">
+        <ul class="pagination justify-content-end">
+          <li class="page-item"><a class="page-link disabled" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal " id="newProductModal">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+              <h5 class="modal-title">New Product </h5>
+              <button class="close" data-bs-dismiss="modal">
+                <span>&times;</span>
+</button>
+           
+</div>
+            <div class="modal-body">
+              <form action="">
+                <div class="mb-3">
+                  <label for="name">Product Name</label> 
+                  <input type="text" name="name" id="name" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="price">Price</label> 
+                  <input type="text" name="price" id="price" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label for="category">Category Name</label> 
+                  <select name="category" id="category" class="form-select">
+                    <option value="">Phone</option>
+                    <option value="">Book</option>
+                    <option value="">Computer</option>        
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="image">Image</label> 
+                  <div class="form-file">
+                    <input type="file" class="form-file-input" name="" id="customFile">
+                    <label for="customFile" class="form-file-label">
+                      <span class="form-file-text">Choose File</span>
+                      <span class="form-file-text">Browse</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="" id="isApproved">
+                    <label class="form-check-label" for="isApproved">isApproved</label>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="description" >Description</label>
+                  <textarea name="" id="description" class="form-control"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn-primary" data-dismis="modal">
+                Save Changes
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+   
+
+
+
+
+    <script src="/node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
+    <script>
+       CKEDITOR.replace( 'description' );
+    </script>
+
+</body>
+</html>
